@@ -1,0 +1,21 @@
+1 - Qual a estrutura básica? um container e um container para o progress
+
+2 - Logo em seguida colocaremos a linha do progresso, a qual estilizaremos mais tarde
+
+3 - Depois vem os números, que chamaremos de circle, por hora.
+
+4 - Fora da div virá o botão.
+
+5 - Porque colocamos disable? Porque simplesmente o usuário não poderá retornar um circulo a partir do 1. Simples :)
+
+6 - Centralize o elemento container na sua página
+
+7 - Agora organize os elementos utilizando os conhecimentos que você já aprendeu. Detalhe: Costumize o tamanho da sua maneira.
+
+8 - Faça com que a linha chegue a onde você quer.
+
+9 - É importante que saibamos como fazer a linha vazia atrás do elemento. Vá atrás disso :)
+
+10 - Agora faça a estilização dos circulos. É muito importante.
+
+11 - Elementos com position absolute são afetados pelo display flex! 

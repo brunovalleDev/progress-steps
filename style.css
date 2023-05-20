@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+:root {
+  --cor-linha-progresso: rgb(216, 214, 214);
+  --cor-linha-active: rgb(51, 142, 178);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.progresso__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  width: 400px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.progresso__container::before {
+  content: "";
+  background-color: var(--cor-linha-progresso);
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  transition: all 0.4s ease;
+  z-index: -2;
+}
+
+.progresso__linha {
+  background-color: var(--cor-linha-active);
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.circulo {
+  border: 3px solid var(--cor-linha-progresso);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.4s ease;
+}
+
+.circulo.active {
+  border: 3px solid var(--cor-linha-active);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.buttons .btn {
+  padding: 13px 30px;
+  border-radius: 5px;
+  background-color: var(--cor-linha-active);
+  border: none;
+  color: #fff;
+  font-size: 0.8rem;
+  box-shadow: 0px 3px 5px 0px rgb(186, 185, 185);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.buttons #prev {
+  background-color: var(--cor-linha-progresso);
+  cursor: not-allowed;
+}
+
+.buttons #prev {}
