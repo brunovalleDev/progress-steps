@@ -18,6 +18,11 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
+}
+
+.container {
+  max-width: 80%;
 }
 
 .progresso__container {
