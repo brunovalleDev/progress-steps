@@ -2,7 +2,7 @@
 
 :root {
   --cor-linha-progresso: rgb(216, 214, 214);
-  --cor-linha-active: rgb(51, 142, 178);
+  --cor-linha-active: rgb(56, 32, 177);
 }
 
 * {
@@ -87,9 +87,7 @@ body {
   transform: scale(0.98);
 }
 
-.buttons #prev {
+.buttons .btn:disabled {
   background-color: var(--cor-linha-progresso);
   cursor: not-allowed;
 }
-
-.buttons #prev {}
