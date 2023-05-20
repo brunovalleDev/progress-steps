@@ -19,3 +19,22 @@
 10 - Agora faça a estilização dos circulos. É muito importante.
 
 11 - Elementos com position absolute são afetados pelo display flex! 
+
+12 - function update() {
+  circles.forEach((circle, idx) => {
+    if(idx < currentActive) {
+      circle.classList.add('active');
+    } else {
+      circle.classList.remove('active');
+    }
+  });
+}
+
+Explique esse código: aqui estou dizendo que para cada elemento do array CIRCLES, faça uma função, que usará como argumento o próprio elemento e o index (que é o segundo elemento). 
+
+Se o index daquele elemento for menor que o current active, adicione a classe active. Caso ele seja MAIOR, remova a classe active. Veja na prática.
+
+
+progresso__linha.style.width = (actives.length - 1) / (circulos.length - 1) * 100 + '%';
+
+Esse código é como colocamos a porcentagem que queremos que uma linha aumente. No caso, active irá representar todos os elementos que estão com ACTIVE e, baseado no tamanho desses arrays, faremos a conta. Lembrando que o click faz com que o contador vá pra dois. Lembre-se sempre disso. E o click que irá determinar quantos divs com a classe .active nós iremos ter.
